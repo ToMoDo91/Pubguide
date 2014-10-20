@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  background-color: #e6eeec;
+}
+
+header h1 {
+  position: relative;
+  left: -11em;
+}
+
+#hoved {
+  background-color: white;
+  max-width: 60em;
+  height: 100em;
+  margin: 0 auto 0 auto;
+  border-radius: 0.3em;
+}
+
+#nav-bar {
+  background-color: #2d3436;
+  max-height: 3em;
+  padding: 1em;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+
+}
+
+#nav-bar a {
+  position: relative;
+  left: -40%;
+}
+
+#nav-bar a:hover,#nav-bar a:visited,#nav-bar a{
+  text-decoration:none;
+  color: white;
+  font-size: 1.3em;
+  padding: 0.2em;
+}
+
+#hovedinnhold {
+  border: solid;
+  max-width: 50em;
+  height: 25em;
+  margin: 2em auto 0 auto;
+}
