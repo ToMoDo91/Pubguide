@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    #wrapper
+      header
+        h1 Project Bar-Berg
+      #hoved
+        #nav-bar
+          a(href='index') Hjem
+          a(href='pub') Om
+          a(href='') Kontakt
+          #sok
+            p Søk etter en bar i Bergen
+            form(action='/pub', method='post')
+              input(type='text', name='pubss')
+        br
+        h2 Something awesome, hopefully #1

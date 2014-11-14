@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    #wrapper
+      header
+        h1 Project Bar-Berg
+      #hoved
+        #nav-bar
+          a(href='index') Hjem
+          a(href='pub') Om
+          a(href='') Kontakt
+          #sok
+            p Søk etter en bar i Bergen
+            form(action='')
+              input(type='text')
+        br
+        #hovedinnhold
+          h1 #{pu.pub}
+          p Aldersgrense: #{pu.alder}
+          p Åpningstider #{pu.apning}
+          p Hjemmeside:
+            a(href='#{pu.hjemme}') #{pu.hjemme}
+          p Type: #{pu.type}
+          p Gate/adresse: #{pu.adresse}
+          p Tlf: #{pu.tlf}
+          p Mail: #{pu.mail}
+          p Kleskode: #{pu.kles}
+          p Inngangspris: #{pu.inngang}
+          p Diverse: #{pu.dive}
