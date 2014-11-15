@@ -36,7 +36,7 @@ header h1 {
 
 #nav-bar a {
   position: relative;
-  left: -40%;
+  left: -38%;
 }
 
 #nav-bar a:hover,#nav-bar a:visited,#nav-bar a{
@@ -54,7 +54,7 @@ header h1 {
 
 #sok {
   position: relative;
-  right:-20em;
+  right:-19em;
   bottom: 3.5em;
 }
 

@@ -7,12 +7,16 @@ block content
       #hoved
         #nav-bar
           a(href='index') Hjem
+          a(href='pub') Pub
           a(href='pub') Om
           a(href='') Kontakt
           #sok
             p Søk etter en bar i Bergen
-            form(action='')
-              input(type='text')
+            form(method='get')
+              input(type='text', name='pub')
+              
+
+
         br
         #hovedinnhold
           h1 #{pu.pub}

@@ -7,11 +7,13 @@ block content
       #hoved
         #nav-bar
           a(href='index') Hjem
+          a(href='pub') Pub
           a(href='pub') Om
           a(href='') Kontakt
           #sok
             p Søk etter en bar i Bergen
-            form(action='/pub', method='post')
-              input(type='text', name='pubss')
+            form(method='get', action='pub')
+              input(type='text', name='pub')
+              
         br
         h2 Something awesome, hopefully #1

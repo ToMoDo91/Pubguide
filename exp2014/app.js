@@ -1,3 +1,7 @@
+function search(){
+};
+
+exports.search = search;
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,6 +13,7 @@ var mongodb = require('mongodb');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoosePages = require('mongoose-pages');
+var mongo
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -28,95 +33,62 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Connecting to mongodb database at mongolab
 var uri = 'mongodb://martin:Kicassu95@ds056727.mongolab.com:56727/pubguide';
-mongoose.connect(uri);
+//Connecting to mongodb database
+mongoose.connect(uri, function(err){
+  if(err){
+    console.log(err)
+  } else {
+    console.log("Connected to mongodb database successfully")
+  }
+});
+
 
 //Using fs to get all files from models folders
 fs.readdirSync(__dirname + '/models').forEach(function(filename){
   if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
 });
 
-console.log(routes.ror)
-search("Altona Vinbar");
 
-function search(sok){
-  var pubs = mongoose.model('pubs');
-  var pub = "";
-  var søk = "BrukBar";
-    pubs.findOne({'Pub' : sok }, function(err, pubs){
-      if(err){
-        console.log(err);
-      }
-      if(pubs){
-        pub = {
-          pub: pubs.Pub,
-          alder: pubs.Aldersgrense,
-          apning: pubs.Apningstider,
-          hjemme: pubs.Hjemmside,
-          type: pubs.Type,
-          adresse: pubs.Adresse,
-          tlf: pubs.Tlf,
-          mail: pubs.Mail,
-          kles: pubs.Kleskode,
-          inngang: pubs.Inngangspris,
-          dive: pubs.Diverse
+
+search.func = function(){
+    var pubs = mongoose.model('pubs');
+    var pub = "";
+    var søk = "BrukBar";
+      pubs.findOne({'Pub' : søk }, function(err, pubs){
+        if(err){
+          console.log(err);
+        }
+        if(pubs){
+          pub = {
+            pub: pubs.Pub,
+            alder: pubs.Aldersgrense,
+            apning: pubs.Apningstider,
+            hjemme: pubs.Hjemmside,
+            type: pubs.Type,
+            adresse: pubs.Adresse,
+            tlf: pubs.Tlf,
+            mail: pubs.Mail,
+            kles: pubs.Kleskode,
+            inngang: pubs.Inngangspris,
+            dive: pubs.Diverse
+
+        };
       };
-    };
-  });
-  app.use(function(req,res,next){
-      req.pub = pub;
-      next();
-});
+
+    });
+    return pub;
+    /*app.use(function(req,res,next){
+        req.pub = pub;
+        next();
+  });*/
 };
+
 app.use('/', routes);
 app.use('/users', users);
 
 
 
-
-
-//building html doc
-var http = require('http');
-var url = require('url');
-function buildHtml(req) {
-  var header = '<title>Pubguide</title><link type="text/css" rel="stylesheet" href="./public/stylesheets/style.css"/><meta name="viewport" content="width=device-width"/><meta charset="UTF-8"/>';
-  var body = '<div id="wrapper">' + '<header>' + '<h1>Project Bar-Berg</h1>' + '</header>';
-      body += '<div id="hoved">' + '<div id="nav-bar">' + '<a href="#hovedinnhold">Hjem</a>' + '<a href="">Om</a>';
-      body += '<a href="">Kontakt</a>' + '<div id="sok">' + '<p>Søk etter en bar i Bergen</p>';
-      body += '<form action="">' + '<input type="text">' + '</form>' + '</div>' + '</div>';
-      body += '<br>' + '<h2>' + pub + '</h2>' + '<div>' + info + '</div></div></div>';
-  // concatenate header string
-  // concatenate body string
-
-  return '<!DOCTYPE html>'
-       + '<html><head>' + header + '</head><body>' + body + '</body></html>';
-};
-
-http.createServer(function (req, res) {
-  var html = buildHtml(req);
-
-
-
-  res.writeHead(200, {
-    'Content-Type': 'text/html',
-    'Content-Length': html.length,
-    'Expires': new Date().toUTCString()
-  })
-  res.end(html);
-
-  var pathname=url.parse(req.url).pathname;
-    switch(pathname){
-        case '/subpage':
-            res.end('subpage');
-        break;
-        default:
-            res.end('default');
-        break;
-    }
-
-
-}).listen(8080);
 
 console.log('running')
 
