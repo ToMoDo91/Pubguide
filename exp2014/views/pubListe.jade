@@ -15,5 +15,11 @@ block content
             form(method='get', action='pub')
               input(type='text', name='pub')
 
+
+
         br
-        h2 Something awesome, hopefully #1
+        h2 Liste over pub i Bergen
+        #hovedinnhold
+          each pub in liste
+            ul
+              a(href='pub?pub=#{pub}')= pub

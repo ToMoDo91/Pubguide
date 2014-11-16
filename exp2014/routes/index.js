@@ -21,21 +21,29 @@ router.get('/index', function(req, res) {
 
 var ror = "";
 
+router.get('/publiste', function(req, res) {
+  var publist = new some.liste(function(publist){
+    console.log(publist)
+    res.render('pubListe', {liste : publist});
+  });
+
+});
+
+//GET puben som er aktuell etter at funksjonen har fått en variabel fra nettsie
 router.get('/pub', function(req, res) {
+
   if(req.query['pub']){
     ror = req.query['pub'];
   } else{
     ror = "BrukBar"
   }
+
   console.log('Pub: ' + ror)
+
   var pub = new some.func(ror, function(pub){
 
     res.render('pub', { pu: pub});
-
-
   });
-
-
 });
 
 

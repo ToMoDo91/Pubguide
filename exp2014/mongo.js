@@ -8,7 +8,7 @@ fs.readdirSync(__dirname + '/models').forEach(function(filename){
   if (~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
 });
 
-/*var uri = 'mongodb://martin:Kicassu95@ds056727.mongolab.com:56727/pubguide';
+var uri = 'mongodb://martin:Kicassu95@ds056727.mongolab.com:56727/pubguide';
 //Connecting to mongodb database
 mongoose.connect(uri, function(err){
   if(err){
@@ -16,10 +16,34 @@ mongoose.connect(uri, function(err){
   } else {
     console.log("Connected to mongodb database successfully")
   }
-});*/
+});
+
+var pubs = mongoose.model('pubs');
+
+var liste = function(callback){
+
+  var pub = "";
+    pubs.find({}, function(err, pubs){
+      var publist = [];
+      var i = 0;
+
+      if(err){
+        console.log(err);
+      }
+      if(pubs){
+        pubs.forEach(function(pubs){
+        publist[i] = pubs.Pub;
+        i++;
+        console.log(pubs.Pub)
+      });
+
+        callback(publist);
+      };
+    });
+};
 
 var func = function(sok, callback){
-    var pubs = mongoose.model('pubs');
+
     var pub = "";
       pubs.findOne({'Pub' : sok }, function(err, pubs){
 
@@ -27,7 +51,7 @@ var func = function(sok, callback){
           console.log(err);
         }
         if(pubs){
-          lol = pubs.Pub;
+
           pub = {
             pub: pubs.Pub,
             alder: pubs.Aldersgrense,
@@ -44,14 +68,8 @@ var func = function(sok, callback){
         };
         callback(pub);
       };
-
     });
-
-    /*app.use(function(req,res,next){
-        req.pub = pub;
-        next();
-  });*/
-
 };
 
 exports.func = func;
+exports.liste = liste;
