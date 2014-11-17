@@ -6,7 +6,7 @@ block content
         h1 Project Bar-Berg
       #hoved
         #nav-bar
-          a(href='index') Hjem
+          a(href='/') Hjem
           a(href='pubListe') Pub
           a(href='') Om
           a(href='') Kontakt
@@ -20,6 +20,16 @@ block content
         br
         h2 Liste over pub i Bergen
         #hovedinnhold
-          each pub in liste
-            ul
-              a(href='pub?pub=#{pub}')= pub
+
+
+
+
+          each pub, index in liste
+
+                  
+                    .side1
+                      ul
+                        if index === 0
+                          h2 #1
+                        h3
+                          a(href="pub?#{uriStr[index]}")= pub

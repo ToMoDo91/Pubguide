@@ -34,7 +34,7 @@ var liste = function(callback){
         pubs.forEach(function(pubs){
         publist[i] = pubs.Pub;
         i++;
-        console.log(pubs.Pub)
+
       });
 
         callback(publist);
@@ -70,6 +70,8 @@ var func = function(sok, callback){
       };
     });
 };
+
+
 
 exports.func = func;
 exports.liste = liste;
