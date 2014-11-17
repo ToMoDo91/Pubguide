@@ -15,7 +15,9 @@ block content
             form(method='get', action='pub')
               input(type='text', name='pub')
 
-
+        - function side(){
+        - document.getElementsByClassName("side1").style.display="none";
+        - };
 
         br
         h2 Liste over pub i Bergen
@@ -24,9 +26,10 @@ block content
 
 
 
+          button(onclick="side()") class
           each pub, index in liste
 
-                  
+
                     .side1
                       ul
                         if index === 0
