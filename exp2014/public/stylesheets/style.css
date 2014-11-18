@@ -59,7 +59,7 @@ header h1 {
   bottom: 3.5em;
 }
 
-#hovedinnhold {
+#hovedinnhold{
   text-align: left;
   border: solid;
   max-width: 48em;
@@ -70,4 +70,24 @@ header h1 {
 
 #hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
   margin: 0.8em 0 0 2%;
+}
+
+#sider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
 }

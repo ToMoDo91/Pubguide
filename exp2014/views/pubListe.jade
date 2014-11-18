@@ -19,25 +19,20 @@ block content
         br
         h2 Liste over pub i Bergen
         #hovedinnhold
-          - var n = docAntall;
-          - for (var i = n; i < n + 10; i++)
-              .side1
-                ul
-                  if index === 0
-                    h2 #1
-                  h3
-                    a(href="pub?#{uriStr[i]}")= liste[i]
+          #sider
+            -var i = 0;
+            .side
+              #side1
+                h2 #1
+                - for (; i < 10; i++)
+                      ul
+                        h3
+                          a(href="pub?#{uriStr[i]}")= liste[i]
 
-          if n === 0
-            #neste
-              a(href="pubListe?class=#{side}") Neste side
-
-          else if n === 60
-            #forrige
-              a(href="pubListe?class=#{side}") Forrige side
-
-          else
-            #forrige
-              a(href="pubListe?class=#{side[0]}") Forrige side
-            #neste
-              a(href="pubListe?class=#{side[1]}") Neste side
+            h2 #1
+            .side
+              #side2
+                - for (; i < 20; i++)
+                      ul
+                        h3
+                          a(href="pub?#{uriStr[i]}")= liste[i]

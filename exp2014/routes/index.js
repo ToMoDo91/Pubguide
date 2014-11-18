@@ -21,7 +21,9 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
-
+router.get('/test', function(req, res) {
+  res.render('test', { title: 'Test' });
+});
 
 router.get('/publiste', function(req, res) {
   var publist = new mongo.liste(function(publist){
