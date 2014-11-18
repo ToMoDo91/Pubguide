@@ -25,8 +25,44 @@ router.get('/', function(req, res) {
 
 router.get('/publiste', function(req, res) {
   var publist = new mongo.liste(function(publist){
+    var num;
+    var side = [];
+    if(req.query['class']){
+      switch(req.query['class']){
+        case 'side1':
+          num = 0;
+          side = ['side2'];
+          break;
+        case 'side2':
+          num = 10;
+          side = ['side1', 'side3'];
+          break;
+        case 'side3':
+          num = 20;
+          side = ['side2', 'side4'];
+          break;
+        case 'side4':
+          num = 30;
+          side = ['side3', 'side5'];
+          break;
+        case 'side5':
+          num = 40;
+          side = ['side4', 'side6'];
+          break;
+        case 'side6':
+          num = 50;
+          side = ['side5', 'side7'];
+          break;
+        case 'side7':
+          num = 60;
+          side = ['side6'];
+          break;
+      }
 
-    var xsome = 12;
+    } else {
+      num = 0;
+      side = ['side2'];
+    }
 
     var uriString = [];
     //Tar alle puber fra publiste og konverter de til URI-format
@@ -36,7 +72,7 @@ router.get('/publiste', function(req, res) {
     }
 
     //Plotter inn pubber og uristringen til hver enkelt pub inn i pubListe.jade-filen
-    res.render('pubListe', {liste : publist, uriStr : uriString, something: xsome});
+    res.render('pubListe', {liste : publist, uriStr : uriString, docAntall : num, side : side});
   });
 
 });

@@ -15,25 +15,29 @@ block content
             form(method='get', action='pub')
               input(type='text', name='pub')
 
-        - function side()
-        - {
-        - document.getElementsByClassName("side1").style.display="none";
-        - };
 
         br
         h2 Liste over pub i Bergen
         #hovedinnhold
+          - var n = docAntall;
+          - for (var i = n; i < n + 10; i++)
+              .side1
+                ul
+                  if index === 0
+                    h2 #1
+                  h3
+                    a(href="pub?#{uriStr[index]}")= liste[i]
 
+          if n === 0
+            #neste
+              a(href="pubListe?class=#{side}") Neste side
 
+          else if n === 60
+            #forrige
+              a(href="pubListe?class=#{side}") Forrige side
 
-
-          button(onclick="side()") class
-          each pub, index in liste
-
-
-                    .side1
-                      ul
-                        if index === 0
-                          h2 #1
-                        h3
-                          a(href="pub?#{uriStr[index]}")= pub
+          else
+            #forrige
+              a(href="pubListe?class=#{side[0]}") Forrige side
+            #neste
+              a(href="pubListe?class=#{side[1]}") Neste side
