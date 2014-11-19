@@ -1,12 +1,16 @@
 body {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding: 0;
   background-color: #e6eeec;
 }
 
 #wrapper {
   margin: 0 auto;
   width: 50em;
-  min-width: 30em;
+
 }
 
 header h1 {
@@ -17,11 +21,12 @@ header h1 {
 
 }
 
+
 #hoved {
   background-color: white;
   max-width: 60em;
   height: auto;
-  margin: 0 auto 0 auto;
+
   border-radius: 0.3em;
   padding-bottom: 1em;
 }
@@ -59,15 +64,83 @@ header h1 {
   bottom: 3.5em;
 }
 
-#hovedinnhold {
-  text-align: left;
+#hovedinnhold{
   border: solid;
   max-width: 48em;
   height: auto;
   margin: 2em auto 1em auto;
   padding-bottom: 1.5em;
+  overflow: hidden;
 }
+
 
 #hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
   margin: 0.8em 0 0 2%;
+}
+/*Alt under her er for scroll funksjonen på pubListe.jade*/
+#sider {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height:32em;
+
+
+}
+
+#sider section{
+  position: relative;
+  border: solid;
+  background: #e6eeec;
+  width: 20em;
+  height: 4em;
+}
+#sider img{
+  position: inherit;
+  top: -4.5em;
+  left: 0.1em;
+}
+#sider h4{
+  position: inherit;
+  top: -1.5em;
+  padding: 0.4em;
+  margin-left: 3.8em;
+}
+
+#mask {
+  width:100%;
+  height:700%;
+}
+
+.side {
+  width:100%;
+  height:14.3%;
+}
+
+.side h4 a, .side h4 a:link, .side h4 a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.sideDiv {
+  float:left;
+  text-align:left;
+  white-space: nowrap;
+  margin: 0 0 0 2em
+}
+
+.sideDiv2 {
+  float:left;
+  text-align: left;
+  margin: 0 0 0 4em;
+  white-space: nowrap;
+}
+
+.atag{
+  margin: 31em  0 0 0;
+  right: 50%;
+  position:absolute;
+  float: right;
+  white-space: nowrap;
 }

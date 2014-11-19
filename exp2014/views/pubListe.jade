@@ -19,25 +19,156 @@ block content
         br
         h2 Liste over pub i Bergen
         #hovedinnhold
-          - var n = docAntall;
-          - for (var i = n; i < n + 10; i++)
-              .side1
-                ul
-                  if index === 0
-                    h2 #1
-                  h3
-                    a(href="pub?#{uriStr[i]}")= liste[i]
+          p Noe annet
+          #sider
+            -var i = 0;
+            #mask
+              #side1.side
+                .sideDiv
+                  h2 #1
+                  - for (; i < 5; i++)
+                    section
+                      h4
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                      img(src='/images/fff.png')
+                    br
 
-          if n === 0
-            #neste
-              a(href="pubListe?class=#{side}") Neste side
 
-          else if n === 60
-            #forrige
-              a(href="pubListe?class=#{side}") Forrige side
+                .sideDiv2
+                  h2 #1
+                  - for (; i < 10; i++)
+                    section
+                      h4
+                        a(href="pub?#{uriStr[i]}")= liste[i]
+                      img(src='/images/fff.png')
+                    br
+                .atag
+                  a(href='#side2').panel Neste side
 
-          else
-            #forrige
-              a(href="pubListe?class=#{side[0]}") Forrige side
-            #neste
-              a(href="pubListe?class=#{side[1]}") Neste side
+
+              #side2.side
+                .sideDiv
+                  h2 #2
+                  - for (; i < 15; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #2
+                  - for (; i < 20; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side3').panel Neste side
+
+              #side3.side
+                .sideDiv
+                  h2 #3
+                  - for (; i < 25; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #3
+                  - for (; i < 30; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side4').panel Neste side
+
+              #side4.side
+                .sideDiv
+                  h2 #4
+                  - for (; i < 35; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #4
+                  - for (; i < 40; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side5').panel Neste side
+
+              #side5.side
+                .sideDiv
+                  h2 #5
+                  - for (; i < 45; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #5
+                  - for (; i < 50; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side6').panel Neste side
+
+              #side6.side
+                .sideDiv
+                  h2 #6
+                  - for (; i < 55; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #6
+                  - for (; i < 60; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side7').panel Neste side
+
+
+              #side7.side
+                .sideDiv
+                  h2 #7
+                  - for (; i < 65; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+
+                .sideDiv2
+                  h2 #7
+                  - for (; i < 67; i++)
+                     section
+                       h4
+                         a(href="pub?#{uriStr[i]}")= liste[i]
+                       img(src='/images/fff.png')
+                     br
+                .atag
+                  a(href='#side1').panel Første side
