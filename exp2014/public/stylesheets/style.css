@@ -89,7 +89,6 @@ header h1 {
 
 }
 
-<<<<<<< HEAD
 #sider section{
   position: relative;
   border: solid;
@@ -144,22 +143,4 @@ header h1 {
   position:absolute;
   float: right;
   white-space: nowrap;
-=======
-#sider h3{
-  text-align: left;
-  margin-left: 5em;
-}
-
-#mask {
-  width:700%;
-  height:100%;
-
-}
-
-.side {
-  width:14.3%;
-  height:100%;
-  float:left;
-
->>>>>>> origin/master
 }
