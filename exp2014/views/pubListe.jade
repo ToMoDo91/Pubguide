@@ -21,18 +21,52 @@ block content
         #hovedinnhold
           #sider
             -var i = 0;
-            .side
-              #side1
-                h2 #1
-                - for (; i < 10; i++)
-                      ul
-                        h3
-                          a(href="pub?#{uriStr[i]}")= liste[i]
+            #mask
+              #side1.side
+                  h2 #1
+                  - for (; i < 10; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side2').panel Neste side
 
-            h2 #1
-            .side
-              #side2
-                - for (; i < 20; i++)
-                      ul
-                        h3
-                          a(href="pub?#{uriStr[i]}")= liste[i]
+              #side2.side
+                  h2 #2
+                  - for (; i < 20; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side3').panel Neste side
+
+              #side3.side
+                  h2 #3
+                  - for (; i < 30; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side4').panel Neste side
+
+              #side4.side
+                  h2 #4
+                  - for (; i < 40; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side5').panel Neste side
+
+              #side5.side
+                  h2 #5
+                  - for (; i < 50; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side6').panel Neste side
+
+              #side6.side
+                  h2 #6
+                  - for (; i < 60; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side7').panel Neste side
+
+              #side7.side
+                  h2 #7
+                  - for (; i < 70; i++)
+                     h3
+                       a(href="pub?#{uriStr[i]}")= liste[i]
+                  a(href='#side1').panel Første side

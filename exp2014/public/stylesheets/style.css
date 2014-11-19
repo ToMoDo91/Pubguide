@@ -1,12 +1,16 @@
 body {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding: 0;
   background-color: #e6eeec;
 }
 
 #wrapper {
   margin: 0 auto;
   width: 50em;
-  min-width: 30em;
+
 }
 
 header h1 {
@@ -21,7 +25,7 @@ header h1 {
   background-color: white;
   max-width: 60em;
   height: auto;
-  margin: 0 auto 0 auto;
+
   border-radius: 0.3em;
   padding-bottom: 1em;
 }
@@ -60,34 +64,44 @@ header h1 {
 }
 
 #hovedinnhold{
-  text-align: left;
   border: solid;
   max-width: 48em;
   height: auto;
   margin: 2em auto 1em auto;
   padding-bottom: 1.5em;
+  overflow: hidden;
 }
+
 
 #hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
   margin: 0.8em 0 0 2%;
 }
-
+/*Alt under her er for scroll funksjonen på pubListe.jade*/
 #sider {
     position: relative;
     width: 100%;
-    height: 100%;
-    perspective: 1200px;
-    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height:32em;
+
+
+}
+
+#sider h3{
+  text-align: left;
+  margin-left: 5em;
+}
+
+#mask {
+  width:700%;
+  height:100%;
+
 }
 
 .side {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
+  width:14.3%;
+  height:100%;
+  float:left;
+
 }
