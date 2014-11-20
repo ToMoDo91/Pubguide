@@ -70,13 +70,14 @@ header h1 {
   height: auto;
   margin: 2em auto 1em auto;
   padding-bottom: 1.5em;
+  text-align:left;
   overflow: hidden;
 }
-
 
 #hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
   margin: 0.8em 0 0 2%;
 }
+
 /*Alt under her er for scroll funksjonen på pubListe.jade*/
 #sider {
     position: relative;
@@ -85,22 +86,24 @@ header h1 {
     left: 0;
     overflow: hidden;
     height:32em;
-
-
 }
 
 #sider section{
   position: relative;
   border: solid;
+  border-color: #e3e3e3;
   background: #e6eeec;
   width: 20em;
   height: 4em;
+  margin-top: -1.5em;
 }
+
 #sider img{
   position: inherit;
   top: -4.5em;
   left: 0.1em;
 }
+
 #sider h4{
   position: inherit;
   top: -1.5em;
@@ -118,23 +121,26 @@ header h1 {
   height:14.3%;
 }
 
-.side h4 a, .side h4 a:link, .side h4 a:visited {
+.side a, .side a:link, .side a:visited {
   text-decoration: none;
   color: black;
 }
 
-.sideDiv {
+.sideDiv, .sideDiv2 {
+  position: inherit;
+  top:-2em;
   float:left;
   text-align:left;
   white-space: nowrap;
-  margin: 0 0 0 2em
+
+}
+
+.sideDiv{
+  margin: -0 0 0 2em
 }
 
 .sideDiv2 {
-  float:left;
-  text-align: left;
   margin: 0 0 0 4em;
-  white-space: nowrap;
 }
 
 .atag{

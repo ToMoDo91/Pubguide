@@ -28,21 +28,21 @@ block content
                   .sideDiv
                     h2= navn
                     - for (; i < n; i++)
-                      section
-                        h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                        img(src='/images/fff.png')
-                      br
+                      a(href="pub?#{uriStr[i]}")
+                        section
+                          h4= liste[i]
+                          img(src='/images/fff.png')
+                        br
 
 
                   .sideDiv2
                     h2= navn
                     - for (; i < (n + 5); i++)
-                      section
-                        h4
-                          a(href="pub?#{uriStr[i]}")= liste[i]
-                        img(src='/images/fff.png')
-                      br
+                      a(href="pub?#{uriStr[i]}")
+                        section
+                          h4= liste[i]
+                          img(src='/images/fff.png')
+                        br
                   .atag
                     a(href=href).panel Neste side
 
