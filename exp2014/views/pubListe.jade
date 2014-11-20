@@ -23,152 +23,33 @@ block content
           #sider
             -var i = 0;
             #mask
-              #side1.side
-                .sideDiv
-                  h2 #1
-                  - for (; i < 5; i++)
-                    section
-                      h4
-                       a(href="pub?#{uriStr[i]}")= liste[i]
-                      img(src='/images/fff.png')
-                    br
-
-
-                .sideDiv2
-                  h2 #1
-                  - for (; i < 10; i++)
-                    section
-                      h4
-                        a(href="pub?#{uriStr[i]}")= liste[i]
-                      img(src='/images/fff.png')
-                    br
-                .atag
-                  a(href='#side2').panel Neste side
-
-
-              #side2.side
-                .sideDiv
-                  h2 #2
-                  - for (; i < 15; i++)
-                     section
-                       h4
+              mixin sider(id,navn,n,href)
+                div(class='side')&attributes(attributes)
+                  .sideDiv
+                    h2= navn
+                    - for (; i < n; i++)
+                      section
+                        h4
                          a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-
-                .sideDiv2
-                  h2 #2
-                  - for (; i < 20; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side3').panel Neste side
-
-              #side3.side
-                .sideDiv
-                  h2 #3
-                  - for (; i < 25; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-
-                .sideDiv2
-                  h2 #3
-                  - for (; i < 30; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side4').panel Neste side
-
-              #side4.side
-                .sideDiv
-                  h2 #4
-                  - for (; i < 35; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-
-                .sideDiv2
-                  h2 #4
-                  - for (; i < 40; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side5').panel Neste side
-
-              #side5.side
-                .sideDiv
-                  h2 #5
-                  - for (; i < 45; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-
-                .sideDiv2
-                  h2 #5
-                  - for (; i < 50; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side6').panel Neste side
-
-              #side6.side
-                .sideDiv
-                  h2 #6
-                  - for (; i < 55; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-
-                .sideDiv2
-                  h2 #6
-                  - for (; i < 60; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side7').panel Neste side
+                        img(src='/images/fff.png')
+                      br
 
 
-              #side7.side
-                .sideDiv
-                  h2 #7
-                  - for (; i < 65; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
+                  .sideDiv2
+                    h2= navn
+                    - for (; i < (n + 5); i++)
+                      section
+                        h4
+                          a(href="pub?#{uriStr[i]}")= liste[i]
+                        img(src='/images/fff.png')
+                      br
+                  .atag
+                    a(href=href).panel Neste side
 
-                .sideDiv2
-                  h2 #7
-                  - for (; i < 67; i++)
-                     section
-                       h4
-                         a(href="pub?#{uriStr[i]}")= liste[i]
-                       img(src='/images/fff.png')
-                     br
-                .atag
-                  a(href='#side1').panel Første side
+              +sider(side1,1,5,'#side2')(id='side1')
+              +sider(side2,2,15,'#side3')(id='side2')
+              +sider(side3,3,25,'#side4')(id='side3')
+              +sider(side4,4,35,'#side5')(id='side4')
+              +sider(side5,5,45,'#side6')(id='side5')
+              +sider(side6,6,55,'#side7')(id='side6')
+              +sider(side7,7,65,'#side1')(id='side7')
