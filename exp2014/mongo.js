@@ -32,7 +32,11 @@ var liste = function(callback){
       }
       if(pubs){
         pubs.forEach(function(pubs){
-        publist[i] = pubs.Pub;
+        publist[i] = {
+          pub: pubs.Pub,
+          type: pubs.Type,
+          alder: pubs.Aldersgrense
+        };
         i++;
 
       });

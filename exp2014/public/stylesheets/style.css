@@ -100,15 +100,27 @@ header h1 {
 
 #sider img{
   position: inherit;
-  top: -4.5em;
+  top: -7.6em;
   left: 0.1em;
 }
 
-#sider h4{
+#sider h4 {
   position: inherit;
   top: -1.5em;
   padding: 0.4em;
   margin-left: 3.8em;
+}
+
+.type {
+  position: inherit;
+  top: -3.2em;
+  left: 3.8em;
+}
+
+.alder {
+  position: inherit;
+  left: 3.8em;
+  top: -3.8em;
 }
 
 #mask {

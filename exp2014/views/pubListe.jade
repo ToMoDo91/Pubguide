@@ -23,33 +23,37 @@ block content
           #sider
             -var i = 0;
             #mask
-              mixin sider(id,navn,n,href)
+              mixin sider(id,navn,n,j,href)
                 div(class='side')&attributes(attributes)
                   .sideDiv
                     h2= navn
                     - for (; i < n; i++)
+                      -var pub = liste[i].pub
                       a(href="pub?#{uriStr[i]}")
                         section
-                          h4= liste[i]
+                          h4= pub
+                          p(class='type') Type #{liste[i].type}
+                          p(class='alder') Alder: #{liste[i].alder}
                           img(src='/images/fff.png')
                         br
 
-
                   .sideDiv2
                     h2= navn
-                    - for (; i < (n + 5); i++)
+                    - for (; i < j; i++)
                       a(href="pub?#{uriStr[i]}")
                         section
-                          h4= liste[i]
+                          h4= liste[i].pub
+                          p(class='type') Type: #{liste[i].type}
+                          p(class='alder') Alder: #{liste[i].alder}
                           img(src='/images/fff.png')
                         br
                   .atag
                     a(href=href).panel Neste side
 
-              +sider(side1,1,5,'#side2')(id='side1')
-              +sider(side2,2,15,'#side3')(id='side2')
-              +sider(side3,3,25,'#side4')(id='side3')
-              +sider(side4,4,35,'#side5')(id='side4')
-              +sider(side5,5,45,'#side6')(id='side5')
-              +sider(side6,6,55,'#side7')(id='side6')
-              +sider(side7,7,65,'#side1')(id='side7')
+              +sider(side1,1,5,10,'#side2')(id='side1')
+              +sider(side2,2,15,20,'#side3')(id='side2')
+              +sider(side3,3,25,30,'#side4')(id='side3')
+              +sider(side4,4,35,40,'#side5')(id='side4')
+              +sider(side5,5,45,50,'#side6')(id='side5')
+              +sider(side6,6,55,60,'#side7')(id='side6')
+              +sider(side7,7,65,67,'#side1')(id='side7')

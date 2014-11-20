@@ -12,10 +12,6 @@ fs.readdirSync(__dirname + '/../').forEach(function(filename){
   if (~filename.indexOf('.js')) require(__dirname + '/../' + filename)
 });
 
-
-
-
-
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
@@ -26,15 +22,16 @@ router.get('/test', function(req, res) {
 });
 
 router.get('/publiste', function(req, res) {
+
   var publist = new mongo.liste(function(publist){
 
     var uriString = [];
     //Tar alle puber fra publiste og konverter de til URI-format
     //Lagrer de så i egen array
     for (var i = 0; i < publist.length; i++){
-      uriString[i] = querystring.stringify({pub: publist[i]});
+      uriString[i] = querystring.stringify({pub: publist[i].pub});
     }
-
+    console.log(publist)
     //Plotter inn pubber og uristringen til hver enkelt pub inn i pubListe.jade-filen
     res.render('pubListe', {liste : publist, uriStr : uriString});
   });
