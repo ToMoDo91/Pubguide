@@ -78,6 +78,11 @@ header h1 {
   margin: 0.8em 0 0 2%;
 }
 
+#disqus_thread {
+  width: 43em;
+  margin: 0 auto;
+}
+
 /*Alt under her er for scroll funksjonen på pubListe.jade*/
 #sider {
     position: relative;
