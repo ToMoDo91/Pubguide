@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 var app = express();
 var fs = require('fs');
-var mongoose = require('mongoose');
-var mongodb = require('mongodb');
 var mongo = require('../mongo')
 var querystring = require("querystring");
 
@@ -31,7 +29,7 @@ router.get('/publiste', function(req, res) {
     for (var i = 0; i < publist.length; i++){
       uriString[i] = querystring.stringify({pub: publist[i].pub});
     }
-    console.log(publist)
+
     //Plotter inn pubber og uristringen til hver enkelt pub inn i pubListe.jade-filen
     res.render('pubListe', {liste : publist, uriStr : uriString});
   });
@@ -58,5 +56,27 @@ router.get('/pub', function(req, res) {
   });
 });
 
+router.get('/pubSok', function(req, res) {
+  var pubsok = '';
+  if(req.query['sok']){
+    pubSok = req.query['sok'];
+  } else{
+    pubSok = "BrukBar"
+  }
 
+  var tag = new mongo.search(pubSok, function(tag){
+
+    var uriString = [];
+    //Tar alle puber fra publiste og konverter de til URI-format
+    //Lagrer de så i egen array
+    for (var i = 0; i < tag.length; i++){
+      uriString[i] = querystring.stringify({pub: tag[i].pub});
+    }
+
+    //Plotter inn pubber og uristringen til hver enkelt pub inn i pubListe.jade-filen
+    res.render('pubSok', {liste : tag, uriStr : uriString, lengde : tag.length});
+    console.log(tag.length)
+  });
+
+});
 module.exports = router;
