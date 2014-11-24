@@ -112,15 +112,19 @@ header h1 {
   position: inherit;
   top: -7.6em;
   left: 0.1em;
+  width: 60px;
+  height: 60px;
 }
 
 #sider img:hover{
-  position: inherit;
-  top: -7.6em;
-  left: 0.1em;
-  width: 100px;
-  height: 100px;
-  z-index: 6;
+
+  width: auto;
+  height: auto;
+  max-width: 20em;
+  overflow: visible;
+  z-index: 999;
+  margin: 0 auto;
+  border: solid;
 }
 
 #sider h4 {
@@ -174,10 +178,33 @@ header h1 {
   margin: 0 0 0 4em;
 }
 
-.atag{
-  margin: 31em  0 0 0;
-  right: 50%;
-  position:absolute;
-  float: right;
+#sideLink {
+  background-color: white;
+  width: 100%;
+  height: 2em;
+}
+.aTagNeste, .aTagForrige {
+  top: 0em;
+  position:relative;
   white-space: nowrap;
+  background-color: #2d3436;
+  width: 5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.aTagNeste a, .aTagForrige a {
+  text-decoration: none;
+  color: white;
+}
+
+.aTagNeste{
+  left: 41.7em;
+}
+.aTagForrige {
+  left: 0.2em;
+  top: -2em;
+
 }

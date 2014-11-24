@@ -3,21 +3,74 @@ $(document).ready(function() {
 
 	//$('#sider').scrollTo('side1', 0);
 	//get all link with class panel
+	var sideNeste = 2;
+	var sideForrige = 1;
 	$('a.panel').click(function () {
 
                 //reset and highlight the clicked link
-		$('a.panel').removeClass('valgt');
-		$(this).addClass('valgt');
 
-		//grab the current side, to be used in resize function
-		current = $(this);
+
+		//grab the forrige side, to be used in resize function
+		neste = $('a.panel');
+		forrige = $('a.panel2');
 
                 //scroll it to the destination
 		$('#sider').scrollTo($(this).attr('href'), 800);
 
-                //cancel the link default behavior
+		$(this).unbind('click');
+		$(this).click(function (event) {
+					event.preventDefault();
+					if(sideNeste > 7 && sideForrige > 6){
+						sideNeste = 7;
+						sideForrige = 6;
+					} else if (sideNeste <= 1 && sideForrige <= 0){
+						sideNeste = 1;
+						sideForrige = 0;
+					};
+
+					sideNeste += 1;
+					sideForrige += 1;
+					neste.attr('href', '#side' + sideNeste);
+					forrige.attr('href', '#side' + sideForrige);
+
+					$('#sider').scrollTo($(this).attr('href'), 800);
+		});
+    //cancel the link default behavior
 		return false;
 	});
+
+	$('a.panel2').click(function () {
+
+		//grab the forrige side, to be used in resize function
+		forrige = $('a.panel2');
+		neste = $('a.panel');
+
+		$(this).unbind('click');
+		$(this).click(function (event) {
+					event.preventDefault();
+					if(sideNeste > 7 && sideForrige > 6){
+						sideNeste = 7;
+						sideForrige = 6;
+					} else if (sideNeste <= 1 && sideForrige <= 0){
+						sideNeste = 1;
+						sideForrige = 0;
+					};
+
+					neste.attr('href', '#side' + sideNeste);
+					forrige.attr('href', '#side' + sideForrige);
+					sideNeste -= 1;
+					sideForrige -= 1;
+
+					$('#sider').scrollTo($(this).attr('href'), 800);
+		});
+		//cancel the link default behavior
+		return false;
+
+	});
+
+
+
+
 
 
 

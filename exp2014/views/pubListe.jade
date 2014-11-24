@@ -34,7 +34,7 @@ block content
                           h4= pub
                           p(class='type') Type #{liste[i].type}
                           p(class='alder') Alder: #{liste[i].alder}
-                          img(src='/images/fff.png')
+                          img(src='/images/Pubbilder/Ad Fontes.jpg')
                         br
 
                   .sideDiv2
@@ -45,10 +45,9 @@ block content
                           h4= liste[i].pub
                           p(class='type') Type: #{liste[i].type}
                           p(class='alder') Alder: #{liste[i].alder}
-                          img(src='/images/fff.png')
+                          img(src='/images/Pubbilder/Dreams Showbar 3.jpg')
                         br
-                  .atag
-                    a(href=href).panel Neste side
+
 
               +sider(side1,1,5,10,'#side2')(id='side1')
               +sider(side2,2,15,20,'#side3')(id='side2')
@@ -57,3 +56,10 @@ block content
               +sider(side5,5,45,50,'#side6')(id='side5')
               +sider(side6,6,55,60,'#side7')(id='side6')
               +sider(side7,7,65,67,'#side1')(id='side7')
+
+          section(id='sideLink')
+            .aTagNeste
+              a(href='#side2').panel Neste side
+
+            .aTagForrige
+              a(href='#side1').panel2 Forrige side
