@@ -118,7 +118,7 @@ header h1 {
 #sider .info:hover img{
   width: auto;
   height: auto;
-  max-width: 20em;
+  max-width: 18em;
   z-index: 999;
   border: solid;
   position: absolute;
