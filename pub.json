@@ -11,7 +11,7 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":"",
-    "Bilder":"/images/Pubbilder/Ad Fontes.jpg"
+    "Bilder":["/images/Pubbilder/Ad Fontes.jpg"]
   },
   {
     "Pub":"Altona Vinbar",
@@ -25,7 +25,7 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":"",
-    "Bilder":"/images/Pubbilder/Altona Vinbar.jpg"
+    "Bilder":["/images/Pubbilder/Altona Vinbar.jpg"]
   },
   {
     "Pub":"Baklommen Bar",
@@ -39,7 +39,7 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":"",
-    "Bilder":"/images/Pubbilder/Baklommen.jpg"
+    "Bilder":["/images/Pubbilder/Baklommen.jpg","/images/Pubbilder/Baklommen 2.jpg", "/images/Pubbilder/Baklommen 3.jpg"]
   },
   {
     "Pub":"Baran Café",
@@ -52,7 +52,8 @@
     "Mail":"",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Baran Cafe.jpg", "/images/Pubbilder/Baran Cafe 2.jpg"]
   },
   {
     "Pub":"Beyer'en Bar & Restaurant",
@@ -65,7 +66,8 @@
     "Mail":"",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Beyer'en.jpg", "/images/Pubbilder/Beyer'en 2.jpg"]
   },
   {
     "Pub":"Biblioteket Bar",
@@ -78,7 +80,8 @@
     "Mail":"booking@biblioteketbar.no",
     "Kleskode":"Smart-Casual",
     "Inngangspris":"Gratis",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Biblioteket Bar.jpg", "/images/Pubbilder/Biblioteket Bar 2.jpg"]
   },
   {
     "Pub":"Biskopen",
@@ -91,7 +94,8 @@
     "Mail":"",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Biskopen.jpg", "/images/Pubbilder/Biskopen 2.jpg"]
   },
   {
     "Pub":"Bocca Restaurant",
@@ -104,7 +108,8 @@
     "Mail":"booking@olebullhuset.no",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Bocca.jpg", "/images/Pubbilder/Bocca 2.jpg"]
   },
   {
     "Pub":"BrukBar",
@@ -117,7 +122,8 @@
     "Mail":"brukbar@sincoas.no",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":"Quiz, variert musikk, daglige events"
+    "Diverse":"Quiz, variert musikk, daglige events",
+    "Bilder":["/images/Pubbilder/BrukBar.jpg", "/images/Pubbilder/BrukBar 2.jpg", "/images/Pubbilder/BrukBar 3.jpg"]
   },
   {
     "Pub":"Bryggen Nightclub",
@@ -130,7 +136,8 @@
     "Mail":"post@bryggennightclub.no",
     "Kleskode":"",
     "Inngangspris":"Gratis",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/bryggen nightclub 2.jpg", "/images/Pubbilder/bryggen nightclub.jpg", "/images/Pubbilder/bryggen nightclub 3.jpg"]
   },
   {
     "Pub":"Café Contra Bar",
@@ -143,7 +150,8 @@
     "Mail":"",
     "Kleskode":"Smart-Casual",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Cafe Contra Bar 3.jpg", "/images/Pubbilder/Cafe Contra Bar 2.jpg"]
   },
   {
     "Pub":"Café Opera",
@@ -156,7 +164,8 @@
     "Mail":"cafeopera@engengruppen.no",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Cafe opera.jpg"]
   },
   {
     "Pub":"Café Teknokrates",
@@ -169,7 +178,8 @@
     "Mail":"bts@bergents.org",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":"Events torsdag, quiz"
+    "Diverse":"Events torsdag, quiz",
+    "Bilder":["/images/Pubbilder/Cafe Teknokrates.png"]
   },
   {
     "Pub":"Calibar",
@@ -182,7 +192,8 @@
     "Mail":"booking@calibar.no",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Calibar 4.jpg", "/images/Pubbilder/Calibar.jpg","/images/Pubbilder/Calibar 2.jpg","/images/Pubbilder/Calibar 3.jpg" ]
   },
   {
     "Pub":"Champions Sportsbar AS",
@@ -208,7 +219,8 @@
     "Mail":"",
     "Kleskode":"",
     "Inngangspris":"Gratis",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Ditlef Exodus 4.jpg", "/images/Pubbilder/Ditlef Exodus 1.jpg", "/images/Pubbilder/Ditlef Exodus 2.jpg", "/images/Pubbilder/Ditlef Exodus 3.jpg"]
   },
   {
     "Pub":"Downstairs",
@@ -234,7 +246,8 @@
     "Mail":"drwiesener@gmail.com",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/dr-wiesener.jpg", "/images/Pubbilder/dr-wiesener 2.jpg"]
   },
   {
     "Pub":"Dreams Showbar",
@@ -247,7 +260,8 @@
     "Mail":"bergen@dreams.no",
     "Kleskode":"",
     "Inngangspris":"250,-",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Dreams Showbar 3.jpg", "/images/Pubbilder/Dreams Showbar.jpg", "/images/Pubbilder/Dreams Showbar 2.jpg" ]
   },
   {
     "Pub":"Dråpen Vinbar",
@@ -260,7 +274,8 @@
     "Mail":"",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":""
+    "Diverse":"",
+    "Bilder":["/images/Pubbilder/Dråpen vinbar.jpg"]
   },
   {
     "Pub":"Elefanten",
@@ -351,7 +366,8 @@
     "Mail":"dyveke@dyvekes-vinkjeller.no",
     "Kleskode":"",
     "Inngangspris":"",
-    "Diverse":"1500-talls atmosfære"
+    "Diverse":"1500-talls atmosfære",
+    "Bilder":["/images/Pubbilder/Frille og Dyvekes 2.jpg", "/images/Pubbilder/Frille og Dyvekes.jpg" ]
   },
   {
     "Pub":"Garage",

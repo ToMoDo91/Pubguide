@@ -34,7 +34,8 @@ var liste = function(callback){
         publist[i] = {
           pub: pubs.Pub,
           type: pubs.Type,
-          alder: pubs.Aldersgrense
+          alder: pubs.Aldersgrense,
+          bilde: pubs.Bilder
         };
         i++;
 

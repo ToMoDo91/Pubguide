@@ -13,7 +13,8 @@ var pubSchema = new Schema({
   Mail: String,
   Kleskode: String,
   Inngangspris: String,
-  Diverse: String
+  Diverse: String,
+  Bilder : Array
 }, {collection: 'pubs'});
 
 

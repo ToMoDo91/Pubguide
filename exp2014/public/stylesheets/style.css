@@ -71,7 +71,7 @@ header h1 {
   margin: 2em auto 1em auto;
   padding-bottom: 1.5em;
   text-align:left;
-  overflow: hidden;
+  position: relative;
 }
 
 #hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
@@ -90,7 +90,6 @@ header h1 {
 
 /*Alt under her er for scroll funksjonen på pubListe.jade*/
 #sider {
-    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -99,7 +98,7 @@ header h1 {
 }
 
 #sider section{
-  position: relative;
+  position: relative; /*Edit this to inherit to change overflow on images*/
   border: solid;
   border-color: #e3e3e3;
   background: #e6eeec;
@@ -116,15 +115,18 @@ header h1 {
   height: 60px;
 }
 
-#sider img:hover{
-
+#sider section:hover img{
   width: auto;
   height: auto;
   max-width: 20em;
-  overflow: visible;
   z-index: 999;
-  margin: 0 auto;
   border: solid;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 17em;
 }
 
 #sider h4 {
