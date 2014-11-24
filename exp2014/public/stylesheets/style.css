@@ -97,8 +97,8 @@ header h1 {
     height:32em;
 }
 
-#sider section{
-  position: relative; /*Edit this to inherit to change overflow on images*/
+#sider .info{
+   /*Edit this to inherit to change overflow on images*/
   border: solid;
   border-color: #e3e3e3;
   background: #e6eeec;
@@ -108,42 +108,58 @@ header h1 {
 }
 
 #sider img{
-  position: inherit;
-  top: -7.6em;
-  left: 0.1em;
+  position: relative;
+  overflow:hidden;
+  top: -7.55em;
   width: 60px;
   height: 60px;
 }
 
-#sider section:hover img{
+#sider .info:hover img{
   width: auto;
   height: auto;
   max-width: 20em;
   z-index: 999;
   border: solid;
-  position: fixed;
-  overflow: auto;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 17em;
+  position: absolute;
+  top: 2em;
+}
+
+#sider .info:hover .bilde1{
+  top: 6em;
+}
+
+#sider .info:hover .bilde2{
+  top: 11em;
+}
+
+#sider .info:hover .bilde3{
+  top: 16.2em;
+}
+
+#sider .info:hover .bilde4{
+  top: 21.3em;
+}
+
+#sider .info:hover .bilde5{
+  top: 26.4em;
 }
 
 #sider h4 {
-  position: inherit;
+  position: relative;
   top: -1.5em;
   padding: 0.4em;
   margin-left: 3.8em;
 }
 
 .type {
-  position: inherit;
+  position: relative;
   top: -3.2em;
   left: 3.8em;
 }
 
 .alder {
-  position: inherit;
+  position: relative;
   left: 3.8em;
   top: -3.8em;
 }
