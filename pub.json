@@ -851,6 +851,20 @@
     "Diverse":""
   },
   {
+    "Pub":"Victoria",
+    "Aldersgrense":"",
+    "Apningstider":"tir av og til, ons 16.00-01.00, tor-lør 16.00-03.00, søn hvis Brann spiller",
+    "Type":"Cafe og Bar",
+    "Adresse":"Kong Oscars Gate 29",
+    "Hjemmside":"http://www.victoriabergen.no",
+    "Tlf":"416 12 061",
+    "Mail":"",
+    "Kleskode":"ingen",
+    "Inngangspris":"",
+    "Diverse":"morfarmøbler, peiskos, månedlige events/live musikk/quiz",
+    "Bilder":["/images/Pubbilder/Victoria.jpg",""]
+  },
+  {
     "Pub":"Wessel Bar",
     "Aldersgrense":"18",
     "Apningstider":" Man-Tor: 12.00-23.00, Fre-Lør 14.00-24.00, Søn: 14.00-23.00",
@@ -888,5 +902,6 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":""
-  }
+  },
+
 ]
