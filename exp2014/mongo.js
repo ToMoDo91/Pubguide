@@ -68,7 +68,8 @@ var func = function(sok, callback){
             mail: pubs.Mail,
             kles: pubs.Kleskode,
             inngang: pubs.Inngangspris,
-            dive: pubs.Diverse
+            dive: pubs.Diverse,
+            bilde: pubs.Bilder
 
         };
         callback(pub);

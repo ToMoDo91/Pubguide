@@ -19,20 +19,22 @@ block content
 
         br
         #hovedinnhold
-          h1 #{pu.pub}
-          .rw-ui-container
-          p Aldersgrense: #{pu.alder}
-          p Åpningstider: #{pu.apning}
-          p Hjemmeside:
-            a(href='#{pu.hjemme}') #{pu.hjemme}
-          p Type: #{pu.type}
-          p Gate/adresse: #{pu.adresse}
-          p Tlf: #{pu.tlf}
-          p Mail: #{pu.mail}
-          p Kleskode: #{pu.kles}
-          p Inngangspris: #{pu.inngang}
-          p Diverse: #{pu.dive}
+          #pub-content
+            h1 #{pu.pub}
+            div(class='rateit bigstars')
 
+            p Aldersgrense: #{pu.alder}
+            p Åpningstider: #{pu.apning}
+            p Hjemmeside:
+              a(href='#{pu.hjemme}') #{pu.hjemme}
+            p Type: #{pu.type}
+            p Gate/adresse: #{pu.adresse}
+            p Tlf: #{pu.tlf}
+            p Mail: #{pu.mail}
+            p Kleskode: #{pu.kles}
+            p Inngangspris: #{pu.inngang}
+            p Diverse: #{pu.dive}
+            img(src='#{pu.bilde[0]}')
           br
           #disqus_thread
             script(type='text/javascript').

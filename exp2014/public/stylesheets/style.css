@@ -78,14 +78,35 @@ header h1 {
   margin: 0.8em 0 0 2%;
 }
 
-.rw-ui-container{
-  postion: relative;
-  left: 1em;
+#pub-content p{
+  position:relative;
+  top:-1.4em;
+  white-space: normal;
+}
+
+#pub-content img {
+  max-width: 20em;
+  position: relative;
+  top: -14.5em;
+  left: 25em;
+  border:solid;
+  display:block;
+}
+
+.rateit.bigstars {
+  overflow:hidden;
+  position: relative;
+  border: none;
+  left:35em;
+  bottom: 2em;
 }
 
 #disqus_thread {
-  width: 43em;
+  width: 47em;
+  position:relative;
   margin: 0 auto;
+  bottom:8em;
+
 }
 
 /*Alt under her er for scroll funksjonen på pubListe.jade*/
@@ -124,6 +145,8 @@ header h1 {
   position: absolute;
   top: 2em;
 }
+
+
 
 #sider .info:hover .bilde1{
   top: 6em;
