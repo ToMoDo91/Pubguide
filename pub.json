@@ -32,7 +32,8 @@
     "Aldersgrense":"18",
     "Apningstider":"tir-lør 18.00-",
     "Type":"Cocktailbar",
-    "Adresse":"Enhjørningsgården 29, 5003 Bergen",    "Hjemmside":"http://www.tokokker.no/tokokker.aspx?pageId=21",
+    "Adresse":"Enhjørningsgården 29, 5003 Bergen",
+    "Hjemmside":"http://www.tokokker.no/tokokker.aspx?pageId=21",
     "Tlf":"55306955",
     "Mail":"restaurant@tokokker.no",
     "Kleskode":"",
@@ -150,7 +151,7 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":"Blir ferdigstilt mars 2015, men åpnes til julebrod 13. november. En del av Zachariasbryggen og Ricksgruppen",
-    "Bilder":["/images/Pubbilder/Bryggeriet - Microbryggeri.jpg"]
+    "Bilder":["/images/Pubbilder/Bryggeriet Microbryggeri.jpg"]
   },
   {
     "Pub":"Café Contra Bar",
@@ -311,7 +312,8 @@
     "Aldersgrense":"18",
     "Apningstider":"man 12.00-01.00, tir-lør 12.00-02.30, søn 14.00-01.00",
     "Type":"Pub/Bar",
-    "Adresse":"Engen 12",    "Hjemmside":"https://www.facebook.com/pages/Elefanten/179171138782914",
+    "Adresse":"Engen 12",
+    "Hjemmside":"https://www.facebook.com/pages/Elefanten/179171138782914",
     "Tlf":"",
     "Mail":"godserveringas@gmail.com",
     "Kleskode":"",
@@ -380,7 +382,8 @@
     "Aldersgrense":"20",
     "Apningstider":"man-ons 15.00-01.30, tor-fre 15.00-03.00, lør 12.00-03.00, søn 12.00-01.30",
     "Type":"Pub",
-    "Adresse":"Skostredet, 5017 Bergen",    "Hjemmside":"https://www.facebook.com/pages/Folk-og-R%C3%B8vere/77216632784?ref=ts&fref=ts#",
+    "Adresse":"Skostredet, 5017 Bergen",
+    "Hjemmside":"https://www.facebook.com/pages/Folk-og-R%C3%B8vere/77216632784?ref=ts&fref=ts#",
     "Tlf":"45243457",
     "Mail":"folkets@gmail.com",
     "Kleskode":"Casual",
@@ -434,7 +437,8 @@
     "Aldersgrense":"20 ( 18 med studentbevis)",
     "Apningstider":"man 17.00-01.00 tir-ons 20.00-01.00 tor-lør 19.00-03.30",
     "Type":"Pub",
-    "Adresse":"Olav Kyrresgate 49",    "Hjemmside":"https://intern.kvarteret.no/wiki/Gr%C3%B8ndahls_flygel-_og_pianolager",
+    "Adresse":"Olav Kyrresgate 49",
+    "Hjemmside":"https://intern.kvarteret.no/wiki/Gr%C3%B8ndahls_flygel-_og_pianolager",
     "Tlf":"",
     "Mail":"",
     "Kleskode":"",
@@ -579,7 +583,7 @@
     "Mail":"booking@lysverket.no",
     "Kleskode":"",
     "Inngangspris":"Alltid gratis",
-    "Diverse":"Fast innslag med landets beste DJer i helgene på nattklubben"
+    "Diverse":"Fast innslag med landets beste DJer i helgene på nattklubben",
     "Bilder":["/images/Pubbilder/Lysverket.jpg","/images/Pubbilder/Lysverket 2.png"]
   },
   {
@@ -622,7 +626,7 @@
     "Kleskode":"",
     "Inngangspris":"",
     "Diverse":"Coctailbar, brettspill, bordtennis",
-    "Bilder":["/images/Pubbilder/no stress.jpg", “/images/Pubbilder/no stress2.jpg”]
+    "Bilder":["/images/Pubbilder/no stress.jpg", "/images/Pubbilder/no stress2.jpg"]
   },
   {
     "Pub":"Onkel Lauritz",
@@ -714,7 +718,7 @@
     "Aldersgrense":"18",
     "Apningstider":"man-søn 18:00-03:00",
     "Type":"Pub",
-    "Adresse":”Bryggen 29, Enhjørninggården",
+    "Adresse":"Bryggen 29, Enhjørninggården",
     "Hjemmside":"http://www.sjoboden-bergen.no/",
     "Tlf":"55316777",
     "Mail":"morten@bergenservering.no",
@@ -781,7 +785,7 @@
   },
   {
     "Pub":"The Tasting Room",
-    "Aldersgrense":"”,
+    "Aldersgrense":"",
     "Apningstider":"man-tor 18.00-02.30, fre-lør 16.00-02.30, søn 18.00-02.30",
     "Type":"Whiskeybar/cocktailbar/bar",
     "Adresse":"Engen 8, 5014 Bergen",
@@ -855,7 +859,7 @@
     "Aldersgrense":"18",
     "Apningstider":"man-tor 11.00-01.00, fre-lør 11.00-02.30, søn 11.00-01.00",
     "Type":"Mikrobryggeri/Cocktailbar",
-    "Adresse":"Bryggen 7, 5003 Bergen",    "Hjemmside":"http://unabryggeri.no/mikrobryggeri-og-kjokken/mikrobryggeriet”,
+    "Adresse":"Bryggen 7, 5003 Bergen",    "Hjemmside":"http://unabryggeri.no/mikrobryggeri-og-kjokken/mikrobryggeriet",
     "Tlf":"48261774",
     "Mail":"post@unamikrobryggeri.no",
     "Kleskode":"",

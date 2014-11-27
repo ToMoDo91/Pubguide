@@ -108,7 +108,7 @@ var search = function(tag, callback){
     };
 
     var puber = [];
-    for (var z = 0; z < 67; z++){
+    for (var z = 0; z < puben.length; z++){
       puber[z] = [
         puben[z].pub,
         puben[z].alder,
@@ -122,7 +122,7 @@ var search = function(tag, callback){
 
     var o = 0;
     var pubFunnet = [];
-    for (var j = 0; j < 67; j++){
+    for (var j = 0; j < puben.length; j++){
       for(var x = 0; x < puber[j].length; x++){
         if (puber[j][x].toLowerCase().indexOf(tag.toLowerCase()) > -1){
           console.log('Det funke')
