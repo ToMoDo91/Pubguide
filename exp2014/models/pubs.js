@@ -14,7 +14,10 @@ var pubSchema = new Schema({
   Kleskode: String,
   Inngangspris: String,
   Diverse: String,
-  Bilder : Array
+  Bilder : Array,
+  rate : Number,
+  votes : Number
+
 }, {collection: 'pubs'});
 
 

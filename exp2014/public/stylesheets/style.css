@@ -99,6 +99,21 @@ header h1 {
   border: none;
   left:35em;
   bottom: 2em;
+  outline: 0;
+}
+
+div.rateit-range{
+  outline:none;
+}
+
+#counter{
+  position: absolute;
+  top: 5em;
+}
+
+#votesOf {
+  position: relative;
+  right: -20em;
 }
 
 #disqus_thread {

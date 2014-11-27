@@ -69,7 +69,9 @@ var func = function(sok, callback){
             kles: pubs.Kleskode,
             inngang: pubs.Inngangspris,
             dive: pubs.Diverse,
-            bilde: pubs.Bilder
+            bilde: pubs.Bilder,
+            rate: pubs.rate,
+            votes: pubs.votes
 
         };
         callback(pub);

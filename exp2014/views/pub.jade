@@ -21,8 +21,11 @@ block content
         #hovedinnhold
           #pub-content
             h1 #{pu.pub}
-            div(class='rateit bigstars')
-
+            div(class='rateit bigstars', id='rate')
+            -var average = (pu.rate / pu.votes);
+            -average = parseFloat(average).toFixed(2);
+            p(id='counter') Antall stemmer: #{pu.votes}
+            p(id='votesOf') #{average} / 5.00
             p Aldersgrense: #{pu.alder}
             p Åpningstider: #{pu.apning}
             p Hjemmeside:
