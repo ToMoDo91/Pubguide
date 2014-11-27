@@ -35,10 +35,10 @@ $(document).ready(function() {
 
     rating = parseInt(rating);
     votes = parseInt(votes);
-    
+
     if (isNaN(rating)){
       rating = 0;
-      alert(rating);
+      
     };
     if (isNaN(votes)){
       votes = 0;
