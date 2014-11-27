@@ -48,6 +48,10 @@ router.get('/pub', function(req, res) {
     pubFraHtml = "BrukBar"
   }
 
+  if(req.query['rating']){
+    console.log(req.query['rating'])
+  }
+
   console.log('Pub: ' + pubFraHtml)
   //Kaller inn funksjonen som henter database verdiene
   var pub = new mongo.func(pubFraHtml, function(pub){

@@ -331,7 +331,7 @@
     };
 
     //some default values.
-    $.fn.rateit.defaults = { min: 0, max: 5, step: 0.425, starwidth: 38, starheight: 30, readonly: false, resetable: false, ispreset: false };
+    $.fn.rateit.defaults = { min: 0, max: 5, step: 0.5, starwidth: 32, starheight: 30, readonly: false, resetable: false, ispreset: false };
 
     //invoke it on all .rateit elements. This could be removed if not wanted.
     $(function () { $('div.rateit, span.rateit').rateit(); });
