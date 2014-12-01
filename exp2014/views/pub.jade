@@ -48,7 +48,7 @@ block content
             p Diverse: #{pu.dive}
             p Hjemmeside:
               a(href='#{pu.hjemme}') #{pu.hjemme}
-            iframe(width="600", height="450", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?q=Ad%20fontes%20norge&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
+            iframe(width="600", height="450", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?q="+"Ad Fontes"+"%20norge&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
             #panel
               input(id="address" type="textbox" value="Sydney, NSW")
               input(type="button" value="Geocode" onclick="codeAddress()")
