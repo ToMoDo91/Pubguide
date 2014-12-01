@@ -69,11 +69,6 @@ $(document).ready(function() {
 	});
 
 
-
-
-
-
-
 	//resize all the sides according to the new browser size
 	/*$(window).resize(function () {
 
@@ -82,6 +77,8 @@ $(document).ready(function() {
 	});*/
 
 });
+
+
 
 /*function resizePanel() {
 

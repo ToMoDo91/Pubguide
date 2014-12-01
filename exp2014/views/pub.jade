@@ -18,26 +18,43 @@ block content
 
 
         br
-        #hovedinnhold
+        #hovedinnhold(onload='initialize()')
           #pub-content
             h1 #{pu.pub}
             div(class='rateit bigstars', id='rate')
-            -var average = (pu.rate / pu.votes);
+            -var average
+            -var rating = pu.rate;
+            -var votes = pu.votes;
+            -average = (rating / votes);
+            -if (isNaN(pu.votes))
+              -average = 0;
+              -rating = 0;
+              -votes = 0;
+
             -average = parseFloat(average).toFixed(2);
-            p(id='counter') Antall stemmer: #{pu.votes}
+            p= pu.votes
+            p= pu.rate
+            p(id='counter') Antall stemmer: #{rating}
             p(id='votesOf') #{average} / 5.00
             p Aldersgrense: #{pu.alder}
             p Åpningstider: #{pu.apning}
-            p Hjemmeside:
-              a(href='#{pu.hjemme}') #{pu.hjemme}
-            p Type: #{pu.type}
             p Gate/adresse: #{pu.adresse}
+            input(id='addresse', type='hidden', value= '#{pu.adresse}')
+            p Type: #{pu.type}
             p Tlf: #{pu.tlf}
             p Mail: #{pu.mail}
             p Kleskode: #{pu.kles}
             p Inngangspris: #{pu.inngang}
             p Diverse: #{pu.dive}
-            img(src='#{pu.bilde[0]}')
+            p Hjemmeside:
+              a(href='#{pu.hjemme}') #{pu.hjemme}
+            iframe(width="600", height="450", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?q=Ad%20fontes%20norge&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
+            #panel
+              input(id="address" type="textbox" value="Sydney, NSW")
+              input(type="button" value="Geocode" onclick="codeAddress()")
+
+            #map-canvas
+
           br
           #disqus_thread
             script(type='text/javascript').
