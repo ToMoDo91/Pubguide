@@ -85,6 +85,10 @@ header h1 {
   width:20em;
 }
 
+#informasjon {
+  margin-top: -4em;
+}
+
 #pub-content img {
   max-width: 20em;
   position: relative;
@@ -99,7 +103,7 @@ header h1 {
   position: relative;
   border: none;
   left:35em;
-  bottom: 2em;
+  top: -1.2em;
   outline: 0;
 }
 
@@ -109,19 +113,20 @@ div.rateit-range{
 
 #counter{
   position: absolute;
+  right: -35.5em;
   top: 5em;
 }
 
 #votesOf {
   position: relative;
-  right: -20em;
+  right: -37em;
 }
 
 #pub-content iframe{
   width: 20em;
   height: 20em;
   position: relative;
-  top: -37em;
+  top: -31em;
   right: -26em;
   border: solid;
 }

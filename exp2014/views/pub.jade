@@ -20,8 +20,6 @@ block content
         br
         #hovedinnhold
           #pub-content
-            h1 #{pu.pub}
-            div(class='rateit bigstars', id='rate')
             -var average
             -var rating = pu.rate;
             -var votes = pu.votes;
@@ -32,42 +30,43 @@ block content
               -votes = 0;
 
             -average = parseFloat(average).toFixed(2);
-            p= pu.votes
-            p= pu.rate
+            h1 #{pu.pub}
             p(id='counter') Antall stemmer: #{rating}
+            div(class='rateit bigstars', id='rate')
             p(id='votesOf') #{average} / 5.00
-            p
-              strong Aldersgrense:
-            p #{pu.alder}
-            p
-              strong Åpningstider:
-            p #{pu.apning}
-            p
-              strong Gate/adresse:
-            p #{pu.adresse}
-            input(id='addresse', type='hidden', value= '#{pu.adresse}')
-            p
-              strong Type:
-            p #{pu.type}
-            p
-              strong Tlf:
-            p #{pu.tlf}
-            p
-              strong Mail:
-            p #{pu.mail}
-            p
-              strong Kleskode:
-            p #{pu.kles}
-            p
-              strong Inngangspris:
-            p #{pu.inngang}
-            p
-              strong Diverse:
-            p #{pu.dive}
-            p
-              strong Hjemmeside:
-            p
-              a(href='#{pu.hjemme}') #{pu.hjemme}
+            #informasjon
+              p
+                strong Aldersgrense:
+              p #{pu.alder}
+              p
+                strong Åpningstider:
+              p #{pu.apning}
+              p
+                strong Gate/adresse:
+              p #{pu.adresse}
+              input(id='addresse', type='hidden', value= '#{pu.adresse}')
+              p
+                strong Type:
+              p #{pu.type}
+              p
+                strong Tlf:
+              p #{pu.tlf}
+              p
+                strong Mail:
+              p #{pu.mail}
+              p
+                strong Kleskode:
+              p #{pu.kles}
+              p
+                strong Inngangspris:
+              p #{pu.inngang}
+              p
+                strong Diverse:
+              p #{pu.dive}
+              p
+                strong Hjemmeside:
+              p
+                a(href='#{pu.hjemme}') #{pu.hjemme}
             iframe(frameborder="0", src="https://www.google.com/maps/embed/v1/place?q="+ "#{pu.pub}" +"%20bergen&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
 
           br
