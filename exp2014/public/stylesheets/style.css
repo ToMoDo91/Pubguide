@@ -125,18 +125,15 @@ div.rateit-range{
 #pub-content iframe{
   width: 20em;
   height: 20em;
-  position: relative;
-  top: -31em;
-  right: -26em;
+  position: absolute;
+  top: 11em;
+  right:2em;
   border: solid;
 }
 
 #disqus_thread {
   width: 47em;
-  position:relative;
   margin: 0 auto;
-  bottom:8em;
-
 }
 
 /*Alt under her er for scroll funksjonen på pubListe.jade*/
