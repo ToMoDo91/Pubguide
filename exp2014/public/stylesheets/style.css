@@ -1,278 +1,250 @@
 body {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  margin:0;
-  padding: 0;
-  background-color: #e6eeec;
+text-align:center;
+height:100%;
+width:100%;
+background-color:#e6eeec;
+margin:0;
+padding:0;
 }
 
 #wrapper {
-  margin: 0 auto;
-  width: 50em;
-
+width:auto;
+max-width:50em;
+margin:0 auto;
 }
 
 header h1 {
-  position: relative;
-  right: 16em;
-  max-width:40em;
-  min-width: 40em;
-
+position:relative;
+right:16em;
+max-width:40em;
+min-width:40em;
 }
 
-
 #hoved {
-  background-color: white;
-  max-width: 60em;
-  height: auto;
-
-  border-radius: 0.3em;
-  padding-bottom: 1em;
+background-color:#FFF;
+max-width:60em;
+height:auto;
+border-radius:.3em;
+padding-bottom:1em;
 }
 
 #nav-bar {
-  background-color: #2d3436;
-  max-height: 2em;
-  padding: 1em;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-
+background-color:#2d3436;
+max-height:2em;
+border-top-left-radius:inherit;
+border-top-right-radius:inherit;
+padding:1em;
 }
 
 #nav-bar a {
-  position: relative;
-  left: -38%;
+position:relative;
+left:-38%;
 }
 
-#nav-bar a:hover,#nav-bar a:visited,#nav-bar a{
-  text-decoration:none;
-  color: white;
-  font-size: 1.3em;
-  padding: 0.2em;
+#nav-bar a:hover,#nav-bar a:visited,#nav-bar a {
+text-decoration:none;
+color:#FFF;
+font-size:1.3em;
+padding:.2em;
 }
 
 #sok p {
-  color: white;
-  position: relative;
-  bottom: -1em;
+color:#FFF;
+position:relative;
+bottom:-1em;
 }
 
 #sok {
-  position: relative;
-  right:-19em;
-  bottom: 3.5em;
+position:relative;
+right:-19em;
+bottom:3.5em;
 }
 
-#hovedinnhold{
-  border: solid;
-  max-width: 48em;
-  height: auto;
-  margin: 2em auto 1em auto;
-  padding-bottom: 1.5em;
-  text-align:left;
-  position: relative;
+#hovedinnhold {
+border:solid;
+max-width:48em;
+height:auto;
+padding-bottom:1.5em;
+text-align:left;
+position:relative;
+margin:2em auto 1em;
 }
 
-#hovedinnhold p,#hovedinnhold h1, #hovedinnhold a{
-  margin: 0.8em 0 0 2%;
+#hovedinnhold p,#hovedinnhold h1,#hovedinnhold a {
+margin:.8em 0 0 2%;
 }
 
-#pub-content p{
-  position:relative;
-  top:-1.4em;
-  white-space: normal;
-  width:20em;
+#pub-content p {
+position:relative;
+top:-1.4em;
+white-space:normal;
+width:20em;
 }
 
 #informasjon {
-  margin-top: -4em;
+margin-top:-4em;
 }
 
 #pub-content img {
-  max-width: 20em;
-  position: relative;
-  top: -14.5em;
-  left: 25em;
-  border:solid;
-  display:block;
+max-width:20em;
+position:relative;
+top:-14.5em;
+left:25em;
+border:solid;
+display:block;
 }
 
 .rateit.bigstars {
-  overflow:hidden;
-  position: relative;
-  border: none;
-  left:35em;
-  top: -1.2em;
-  outline: 0;
+overflow:hidden;
+position:relative;
+border:none;
+left:35em;
+top:-1.2em;
+outline:0;
 }
 
-div.rateit-range{
-  outline:none;
+div.rateit-range {
+outline:none;
 }
 
-#counter{
-  position: absolute;
-  right: -35.5em;
-  top: 5em;
+#counter {
+position:absolute;
+right:-35.5em;
+top:5em;
 }
 
 #votesOf {
-  position: relative;
-  right: -37em;
+position:relative;
+right:-37em;
 }
 
-#pub-content iframe{
-  width: 20em;
-  height: 20em;
-  position: absolute;
-  top: 11em;
-  right:2em;
-  border: solid;
+#pub-content iframe {
+width:20em;
+height:20em;
+position:absolute;
+top:11em;
+right:2em;
+border:solid;
 }
 
 #disqus_thread {
-  width: 47em;
-  margin: 0 auto;
+width:47em;
+margin:0 auto;
 }
 
-/*Alt under her er for scroll funksjonen på pubListe.jade*/
+/*Alt under er for slider*/
 #sider {
-    width: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    height:32em;
+width:100%;
+top:0;
+left:0;
+overflow:hidden;
+height:32em;
 }
 
-#sider .info{
-   /*Edit this to inherit to change overflow on images*/
-  border: solid;
-  border-color: #e3e3e3;
-  background: #e6eeec;
-  width: 20em;
-  height: 4em;
-  margin-top: -1.5em;
+#sider .info {
+border:solid;
+background:#e6eeec;
+width:20em;
+height:4em;
+margin-top:-1.5em;
+border-color:#e3e3e3;
 }
 
-#sider img{
-  position: relative;
-  overflow:hidden;
-  top: -7.55em;
-  width: 60px;
-  height: 60px;
+#sider .info:hover {
+border:solid;
+background:#d1d1d1;
+width:20em;
+height:4em;
+margin-top:-1.5em;
+border-color:#b3b3b3;
 }
 
-#sider .info:hover img{
-  width: auto;
-  height: auto;
-  max-width: 18em;
-  z-index: 999;
-  border: solid;
-  position: absolute;
-  top: 2em;
-}
-
-
-
-#sider .info:hover .bilde1{
-  top: 6em;
-}
-
-#sider .info:hover .bilde2{
-  top: 11em;
-}
-
-#sider .info:hover .bilde3{
-  top: 16.2em;
-}
-
-#sider .info:hover .bilde4{
-  top: 21.3em;
-}
-
-#sider .info:hover .bilde5{
-  top: 26.4em;
+#sider img {
+position:relative;
+overflow:hidden;
+top:-7.55em;
+width:60px;
+height:60px;
 }
 
 #sider h4 {
-  position: relative;
-  top: -1.5em;
-  padding: 0.4em;
-  margin-left: 3.8em;
+position:relative;
+top:-1.5em;
+margin-left:3.8em;
+padding:.4em;
 }
 
 .type {
-  position: relative;
-  top: -3.2em;
-  left: 3.8em;
+position:relative;
+top:-3.2em;
+left:3.8em;
 }
 
 .alder {
-  position: relative;
-  left: 3.8em;
-  top: -3.8em;
+position:relative;
+left:3.8em;
+top:-3.8em;
 }
 
 #mask {
-  width:100%;
-  height:700%;
+width:100%;
+height:700%;
 }
 
 .side {
-  width:100%;
-  height:14.3%;
+width:100%;
+height:14.3%;
 }
 
-.side a, .side a:link, .side a:visited {
-  text-decoration: none;
-  color: black;
+.side a,.side a:link,.side a:visited {
+text-decoration:none;
+color:#000;
 }
 
-.sideDiv, .sideDiv2 {
-  position: inherit;
-  top:-2em;
-  float:left;
-  text-align:left;
-  white-space: nowrap;
-
+.sideDiv,.sideDiv2 {
+position:inherit;
+top:-2em;
+float:left;
+text-align:left;
+white-space:nowrap;
 }
 
-.sideDiv{
-  margin: -0 0 0 2em
+.sideDiv {
+margin:-0 0 0 2em;
 }
 
 .sideDiv2 {
-  margin: 0 0 0 4em;
+margin:0 0 0 4em;
 }
 
 #sideLink {
-  background-color: white;
-  width: 100%;
-  height: 2em;
-}
-.aTagNeste, .aTagForrige {
-  top: 0em;
-  position:relative;
-  white-space: nowrap;
-  background-color: #2d3436;
-  width: 5em;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-  color: white;
+background-color:#FFF;
+width:100%;
+height:2em;
 }
 
-.aTagNeste a, .aTagForrige a {
-  text-decoration: none;
-  color: white;
+.aTagNeste,.aTagForrige {
+top:0;
+position:relative;
+white-space:nowrap;
+background-color:#2d3436;
+width:5em;
+border-radius:.5em;
+text-decoration:none;
+color:#FFF;
+padding:.5em;
 }
 
-.aTagNeste{
-  left: 41.7em;
+.aTagNeste a,.aTagForrige a {
+text-decoration:none;
+color:#FFF;
 }
+
+.aTagNeste {
+left:41.7em;
+}
+
 .aTagForrige {
-  left: 0.2em;
-  top: -2em;
-
+left:.2em;
+top:-2em;
 }
