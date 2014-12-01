@@ -19,7 +19,6 @@ block content
         br
         h2 Liste over pub i Bergen
         #hovedinnhold
-          p Noe annet
           #sider
             -var i = 0;
             #mask
@@ -27,7 +26,6 @@ block content
                 div(class='side')&attributes(attributes)
                   -var b = 1;
                   .sideDiv
-                    h2= navn
                     - for (; i < n; i++)
                       -var pub = liste[i].pub
                       a(href="pub?#{uriStr[i]}")
@@ -40,7 +38,6 @@ block content
                         br
                   -b = 1;
                   .sideDiv2
-                    h2= navn
                     - for (; i < j; i++)
                       a(href="pub?#{uriStr[i]}")
                         .info
