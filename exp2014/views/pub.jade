@@ -18,7 +18,7 @@ block content
 
 
         br
-        #hovedinnhold(onload='initialize()')
+        #hovedinnhold
           #pub-content
             h1 #{pu.pub}
             div(class='rateit bigstars', id='rate')
@@ -48,12 +48,7 @@ block content
             p Diverse: #{pu.dive}
             p Hjemmeside:
               a(href='#{pu.hjemme}') #{pu.hjemme}
-            iframe(width="600", height="450", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?q="+ "#{pu.pub}" +"%20bergen&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
-            #panel
-              input(id="address" type="textbox" value="Sydney, NSW")
-              input(type="button" value="Geocode" onclick="codeAddress()")
-
-            #map-canvas
+            iframe(frameborder="0", src="https://www.google.com/maps/embed/v1/place?q="+ "#{pu.pub}" +"%20bergen&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
 
           br
           #disqus_thread

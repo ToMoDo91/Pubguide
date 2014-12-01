@@ -116,15 +116,13 @@ div.rateit-range{
   right: -20em;
 }
 
-#map-canvas{
-  width:20em;
-  height:20em;
+#pub-content iframe{
+  width: 20em;
+  height: 20em;
   position: relative;
-  right: -20em;
   top: -20em;
-  
-  margin: 0px;
-  padding: 0px
+  right: -20em;
+  border: solid;
 }
 
 #disqus_thread {
