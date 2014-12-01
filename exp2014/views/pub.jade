@@ -36,17 +36,37 @@ block content
             p= pu.rate
             p(id='counter') Antall stemmer: #{rating}
             p(id='votesOf') #{average} / 5.00
-            p Aldersgrense: #{pu.alder}
-            p Åpningstider: #{pu.apning}
-            p Gate/adresse: #{pu.adresse}
+            p
+              strong Aldersgrense:
+            p #{pu.alder}
+            p
+              strong Åpningstider:
+            p #{pu.apning}
+            p
+              strong Gate/adresse:
+            p #{pu.adresse}
             input(id='addresse', type='hidden', value= '#{pu.adresse}')
-            p Type: #{pu.type}
-            p Tlf: #{pu.tlf}
-            p Mail: #{pu.mail}
-            p Kleskode: #{pu.kles}
-            p Inngangspris: #{pu.inngang}
-            p Diverse: #{pu.dive}
-            p Hjemmeside:
+            p
+              strong Type:
+            p #{pu.type}
+            p
+              strong Tlf:
+            p #{pu.tlf}
+            p
+              strong Mail:
+            p #{pu.mail}
+            p
+              strong Kleskode:
+            p #{pu.kles}
+            p
+              strong Inngangspris:
+            p #{pu.inngang}
+            p
+              strong Diverse:
+            p #{pu.dive}
+            p
+              strong Hjemmeside:
+            p
               a(href='#{pu.hjemme}') #{pu.hjemme}
             iframe(frameborder="0", src="https://www.google.com/maps/embed/v1/place?q="+ "#{pu.pub}" +"%20bergen&key=AIzaSyBQSaZK116hCjXPtvUbMFT3M4A-eHbX8hU")
 

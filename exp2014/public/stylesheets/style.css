@@ -82,6 +82,7 @@ header h1 {
   position:relative;
   top:-1.4em;
   white-space: normal;
+  width:20em;
 }
 
 #pub-content img {
@@ -120,8 +121,8 @@ div.rateit-range{
   width: 20em;
   height: 20em;
   position: relative;
-  top: -20em;
-  right: -20em;
+  top: -37em;
+  right: -26em;
   border: solid;
 }
 
